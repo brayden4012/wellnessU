@@ -137,6 +137,7 @@ class SubmitterViewModel: ObservableObject {
 
 struct SubmitterView: View {
     @ObservedObject var viewModel: SubmitterViewModel
+    @State var showConfluenceProfile = false
 
     var body: some View {
         VStack {
@@ -149,7 +150,21 @@ struct SubmitterView: View {
                 .multilineTextAlignment(.center)
                 .font(Font.custom("OpenSans-Bold", size: 20.0))
                 .foregroundColor(.blue)
+                .onTapGesture {
+                    showConfluenceProfile.toggle()
+                }
         }
+        .sheet(isPresented: $showConfluenceProfile) {
+            print("Dismissed!")
+        } content: {
+            if let urlString = viewModel.content.confluenceProfileUrl,
+            let url = URL(string: urlString) {
+                SafariView(url: url)
+            } else {
+                Text("We're missing \(viewModel.content.submitter)'s profile")
+            }
+        }
+
     }
 }
 

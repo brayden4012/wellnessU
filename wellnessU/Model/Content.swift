@@ -50,6 +50,7 @@ struct Content: Codable {
     let answer: String?
     let punchline: String?
     let profileImageUrl: String?
+    let confluenceProfileUrl: String?
 
     var contentType: ContentType {
         if let author = author,
@@ -70,15 +71,15 @@ struct Content: Codable {
     }
 
     static var previewQuoteModel: Content {
-        Content(id: 1, author: "Terminator", submitter: "John Doe", details: "\"Hasta la vista, baby\"", answer: nil, punchline: nil, profileImageUrl: nil)
+        Content(id: 1, author: "Terminator", submitter: "John Doe", details: "\"Hasta la vista, baby\"", answer: nil, punchline: nil, profileImageUrl: nil, confluenceProfileUrl: nil)
     }
 
     static var previewJokeModel: Content {
-        Content(id: 1, author: nil, submitter: "John Doe", details: "How do you know a pepper is mad at you?", answer: nil, punchline: "It gets Jalapeño face", profileImageUrl: nil)
+        Content(id: 1, author: nil, submitter: "John Doe", details: "How do you know a pepper is mad at you?", answer: nil, punchline: "It gets Jalapeño face", profileImageUrl: nil, confluenceProfileUrl: nil)
     }
 
     static var previewTriviaModel: Content {
-        Content(id: 1, author: nil, submitter: "John Doe", details: "What is 2 + 2", answer: "4", punchline: nil, profileImageUrl: nil)
+        Content(id: 1, author: nil, submitter: "John Doe", details: "What is 2 + 2", answer: "4", punchline: nil, profileImageUrl: nil, confluenceProfileUrl: nil)
     }
 }
 

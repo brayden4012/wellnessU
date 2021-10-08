@@ -21,6 +21,7 @@
 		C30C76C3270FA13E00045347 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C30C76C2270FA13E00045347 /* OpenSans-Bold.ttf */; };
 		C30C76C6270FDE3700045347 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76C5270FDE3700045347 /* MainViewModel.swift */; };
 		C30C76CF270FF5E700045347 /* EmojiShowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76CE270FF5E700045347 /* EmojiShowerView.swift */; };
+		C30C76D42710B5FC00045347 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76D32710B5FC00045347 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		C30C76C2270FA13E00045347 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		C30C76C5270FDE3700045347 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		C30C76CE270FF5E700045347 /* EmojiShowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiShowerView.swift; sourceTree = "<group>"; };
+		C30C76D32710B5FC00045347 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				C30C768F270F73AC00045347 /* MainView.swift */,
 				C30C76BC270F8FAB00045347 /* ContentView.swift */,
+				C30C76D32710B5FC00045347 /* SafariView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				C30C76BD270F8FAB00045347 /* ContentView.swift in Sources */,
 				C30C76B8270F73D100045347 /* Networking.swift in Sources */,
 				C30C7690270F73AC00045347 /* MainView.swift in Sources */,
+				C30C76D42710B5FC00045347 /* SafariView.swift in Sources */,
 				C30C768E270F73AC00045347 /* wellnessUApp.swift in Sources */,
 				C30C76C6270FDE3700045347 /* MainViewModel.swift in Sources */,
 				C30C76CF270FF5E700045347 /* EmojiShowerView.swift in Sources */,
