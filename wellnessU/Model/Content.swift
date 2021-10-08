@@ -52,9 +52,11 @@ struct Content: Codable {
     let profileImageUrl: String?
 
     var contentType: ContentType {
-        if author != nil {
+        if let author = author,
+           !author.isEmpty {
             return .quote
-        } else if answer != nil {
+        } else if let answer = answer,
+                  !answer.isEmpty {
             return .trivia
         } else {
             return .joke

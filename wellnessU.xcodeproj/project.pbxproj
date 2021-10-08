@@ -110,12 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				C30C768D270F73AC00045347 /* wellnessUApp.swift */,
-				C30C76D22710085900045347 /* Resources */,
 				C30C76BE270F908500045347 /* Model */,
 				C30C76D02710082800045347 /* View Models */,
 				C30C76BB270F8F8300045347 /* Views */,
 				C30C76D12710084C00045347 /* Networking */,
 				C30C76C7270FF59200045347 /* Animations */,
+				C30C76D22710085900045347 /* Resources */,
 				C30C7693270F73BA00045347 /* Preview Content */,
 			);
 			path = wellnessU;

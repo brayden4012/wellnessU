@@ -21,7 +21,6 @@ class Networking {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             return try decoder.decode(ContentList.self, from: data)
         } catch {
-            print(error)
             throw NetworkingError.parsingError(description: error.localizedDescription)
         }
     }
