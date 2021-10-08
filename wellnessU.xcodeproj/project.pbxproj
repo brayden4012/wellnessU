@@ -55,7 +55,7 @@
 		C30C76B9270F749700045347 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		C30C76BC270F8FAB00045347 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C30C76BF270FA03500045347 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		C30C76C1270FA0DB00045347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C30C76C1270FA0DB00045347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C30C76C2270FA13E00045347 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		C30C76C5270FDE3700045347 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		C30C76CE270FF5E700045347 /* EmojiShowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiShowerView.swift; sourceTree = "<group>"; };
@@ -109,15 +109,13 @@
 		C30C768C270F73AC00045347 /* wellnessU */ = {
 			isa = PBXGroup;
 			children = (
-				C30C76C1270FA0DB00045347 /* Info.plist */,
 				C30C768D270F73AC00045347 /* wellnessUApp.swift */,
-				C30C76C5270FDE3700045347 /* MainViewModel.swift */,
-				C30C76C4270FA18700045347 /* Fonts */,
-				C30C76BB270F8F8300045347 /* Views */,
+				C30C76D22710085900045347 /* Resources */,
 				C30C76BE270F908500045347 /* Model */,
-				C30C76B7270F73D100045347 /* Networking.swift */,
+				C30C76D02710082800045347 /* View Models */,
+				C30C76BB270F8F8300045347 /* Views */,
+				C30C76D12710084C00045347 /* Networking */,
 				C30C76C7270FF59200045347 /* Animations */,
-				C30C7691270F73BA00045347 /* Assets.xcassets */,
 				C30C7693270F73BA00045347 /* Preview Content */,
 			);
 			path = wellnessU;
@@ -180,6 +178,32 @@
 				C30C76CE270FF5E700045347 /* EmojiShowerView.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		C30C76D02710082800045347 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C30C76C5270FDE3700045347 /* MainViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C30C76D12710084C00045347 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C30C76B7270F73D100045347 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C30C76D22710085900045347 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C30C7691270F73BA00045347 /* Assets.xcassets */,
+				C30C76C1270FA0DB00045347 /* Info.plist */,
+				C30C76C4270FA18700045347 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,7 +508,7 @@
 				DEVELOPMENT_TEAM = SUD83636UR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = wellnessU/Info.plist;
+				INFOPLIST_FILE = wellnessU/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -515,7 +539,7 @@
 				DEVELOPMENT_TEAM = SUD83636UR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = wellnessU/Info.plist;
+				INFOPLIST_FILE = wellnessU/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
