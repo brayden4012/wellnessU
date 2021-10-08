@@ -34,15 +34,20 @@ struct MainView: View {
                     Spacer()
                         .frame(height: 100)
 
-                    HStack(spacing: 20) {
-                        TextField("", text: $mainViewModel.selectedNumber)
-                            .multilineTextAlignment(.center)
-                            .keyboardType(.numberPad)
-                            .frame(height: 50)
-                            .frame(maxWidth: 100)
-                            .overlay(RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.black, lineWidth: 4)
-                            )
+                    HStack(alignment: .top, spacing: 20) {
+                        VStack {
+                            TextField("", text: $mainViewModel.selectedNumber)
+                                .multilineTextAlignment(.center)
+                                .keyboardType(.numberPad)
+                                .frame(height: 50)
+                                .frame(maxWidth: 100)
+                                .overlay(RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.black, lineWidth: 4)
+                                )
+                            Text("Pick a number 1 to 300")
+                                .font(Font.custom("OpenSans-Regular", size: 15.0))
+                        }
+
 
                         Button {
                             selectContent()
@@ -58,9 +63,6 @@ struct MainView: View {
                         .disabled(mainViewModel.selectedNumber.isEmpty)
 
                     }
-
-                    Text("Pick a number 1 to 300")
-                        .font(Font.custom("OpenSans-Regular", size: 15.0))
                 }
 
                 NavBar()
@@ -111,6 +113,7 @@ struct NavBar: View {
                 Image("appLogo")
                     .resizable()
                     .scaledToFit()
+                    .padding()
                     .onTapGesture {
                         presentationMode.wrappedValue.dismiss()
                     }
