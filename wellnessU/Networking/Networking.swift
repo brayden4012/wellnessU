@@ -21,7 +21,7 @@ class Networking {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             return try decoder.decode(ContentList.self, from: data)
         } catch {
-            throw NetworkingError.parsingError(description: error.localizedDescription)
+            throw NetworkingError.parsingError(description: "\(error)")
         }
     }
 
@@ -47,6 +47,19 @@ enum NetworkingError: Error {
     case invalidResponse(statusCode: Int)
     case parsingError(description: String)
     case unableToDecodeImage
+
+    var errorMessage: String {
+        switch self {
+        case .invalidURL:
+            return "Invalid URL"
+        case .invalidResponse(let statusCode):
+            return "Invalid Response: \(statusCode)"
+        case .parsingError(let description):
+            return "Parsing Error: \(description)"
+        case .unableToDecodeImage:
+            return "Unable to decode image"
+        }
+    }
 }
 
 enum Endpoint {

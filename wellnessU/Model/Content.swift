@@ -11,11 +11,18 @@ import SwiftUI
 class ContentManager: ObservableObject {
     @Published var contentList: ContentList?
     @Published var selectedContent: Content?
+    @Published var alert: Alert?
 
     @MainActor
     init() {
         Task {
-            self.contentList = try? await Networking().fetchQuotes()
+            do {
+                self.contentList = try await Networking().fetchQuotes()
+            } catch {
+                if let error = error as? NetworkingError {
+                    self.alert = Alert(title: Text("Error"), message: Text(error.errorMessage), dismissButton: .default(Text("OK")))
+                }
+            }
         }
     }
 
