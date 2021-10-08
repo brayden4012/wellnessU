@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C30C768E270F73AC00045347 /* wellnessUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C768D270F73AC00045347 /* wellnessUApp.swift */; };
-		C30C7690270F73AC00045347 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C768F270F73AC00045347 /* ContentView.swift */; };
+		C30C7690270F73AC00045347 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C768F270F73AC00045347 /* MainView.swift */; };
 		C30C7692270F73BA00045347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30C7691270F73BA00045347 /* Assets.xcassets */; };
 		C30C7695270F73BA00045347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30C7694270F73BA00045347 /* Preview Assets.xcassets */; };
 		C30C769F270F73BB00045347 /* wellnessUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C769E270F73BB00045347 /* wellnessUTests.swift */; };
 		C30C76A9270F73BB00045347 /* wellnessUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76A8270F73BB00045347 /* wellnessUUITests.swift */; };
 		C30C76AB270F73BB00045347 /* wellnessUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76AA270F73BB00045347 /* wellnessUUITestsLaunchTests.swift */; };
+		C30C76B8270F73D100045347 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76B7270F73D100045347 /* Networking.swift */; };
+		C30C76BA270F749700045347 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76B9270F749700045347 /* Content.swift */; };
+		C30C76BD270F8FAB00045347 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76BC270F8FAB00045347 /* ContentView.swift */; };
+		C30C76C0270FA03500045347 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C30C76BF270FA03500045347 /* OpenSans-Regular.ttf */; };
+		C30C76C3270FA13E00045347 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C30C76C2270FA13E00045347 /* OpenSans-Bold.ttf */; };
+		C30C76C6270FDE3700045347 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76C5270FDE3700045347 /* MainViewModel.swift */; };
+		C30C76CF270FF5E700045347 /* EmojiShowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C76CE270FF5E700045347 /* EmojiShowerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		C30C768A270F73AC00045347 /* wellnessU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wellnessU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30C768D270F73AC00045347 /* wellnessUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wellnessUApp.swift; sourceTree = "<group>"; };
-		C30C768F270F73AC00045347 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C30C768F270F73AC00045347 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C30C7691270F73BA00045347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30C7694270F73BA00045347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C30C769A270F73BB00045347 /* wellnessUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wellnessUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,14 @@
 		C30C76A4270F73BB00045347 /* wellnessUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wellnessUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30C76A8270F73BB00045347 /* wellnessUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wellnessUUITests.swift; sourceTree = "<group>"; };
 		C30C76AA270F73BB00045347 /* wellnessUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wellnessUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C30C76B7270F73D100045347 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		C30C76B9270F749700045347 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		C30C76BC270F8FAB00045347 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C30C76BF270FA03500045347 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		C30C76C1270FA0DB00045347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C30C76C2270FA13E00045347 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		C30C76C5270FDE3700045347 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		C30C76CE270FF5E700045347 /* EmojiShowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiShowerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +109,14 @@
 		C30C768C270F73AC00045347 /* wellnessU */ = {
 			isa = PBXGroup;
 			children = (
+				C30C76C1270FA0DB00045347 /* Info.plist */,
 				C30C768D270F73AC00045347 /* wellnessUApp.swift */,
-				C30C768F270F73AC00045347 /* ContentView.swift */,
+				C30C76C5270FDE3700045347 /* MainViewModel.swift */,
+				C30C76C4270FA18700045347 /* Fonts */,
+				C30C76BB270F8F8300045347 /* Views */,
+				C30C76BE270F908500045347 /* Model */,
+				C30C76B7270F73D100045347 /* Networking.swift */,
+				C30C76C7270FF59200045347 /* Animations */,
 				C30C7691270F73BA00045347 /* Assets.xcassets */,
 				C30C7693270F73BA00045347 /* Preview Content */,
 			);
@@ -125,6 +146,40 @@
 				C30C76AA270F73BB00045347 /* wellnessUUITestsLaunchTests.swift */,
 			);
 			path = wellnessUUITests;
+			sourceTree = "<group>";
+		};
+		C30C76BB270F8F8300045347 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C30C768F270F73AC00045347 /* MainView.swift */,
+				C30C76BC270F8FAB00045347 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C30C76BE270F908500045347 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C30C76B9270F749700045347 /* Content.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C30C76C4270FA18700045347 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C30C76BF270FA03500045347 /* OpenSans-Regular.ttf */,
+				C30C76C2270FA13E00045347 /* OpenSans-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C30C76C7270FF59200045347 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				C30C76CE270FF5E700045347 /* EmojiShowerView.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30C7695270F73BA00045347 /* Preview Assets.xcassets in Resources */,
+				C30C76C0270FA03500045347 /* OpenSans-Regular.ttf in Resources */,
+				C30C76C3270FA13E00045347 /* OpenSans-Bold.ttf in Resources */,
 				C30C7692270F73BA00045347 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30C7690270F73AC00045347 /* ContentView.swift in Sources */,
+				C30C76BA270F749700045347 /* Content.swift in Sources */,
+				C30C76BD270F8FAB00045347 /* ContentView.swift in Sources */,
+				C30C76B8270F73D100045347 /* Networking.swift in Sources */,
+				C30C7690270F73AC00045347 /* MainView.swift in Sources */,
 				C30C768E270F73AC00045347 /* wellnessUApp.swift in Sources */,
+				C30C76C6270FDE3700045347 /* MainViewModel.swift in Sources */,
+				C30C76CF270FF5E700045347 /* EmojiShowerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,12 +484,13 @@
 				DEVELOPMENT_TEAM = SUD83636UR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wellnessU/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +515,13 @@
 				DEVELOPMENT_TEAM = SUD83636UR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wellnessU/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +544,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SUD83636UR;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,7 +569,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SUD83636UR;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
